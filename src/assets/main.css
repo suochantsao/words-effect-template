@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flex {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.input {
+  margin-bottom: 20px;
+}
+
+.resultBlock {
+  border-width: 1px;
+  border-color: lightseagreen;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  p {
+    font-size: xx-large;
+  }
+}
+
+.colorPicker {
+  margin-top: 25px;
+  p {
+    margin-bottom: 10px;
+  }
+}
