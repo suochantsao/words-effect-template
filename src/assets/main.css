@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 .flex {
   display: flex;
   height: 100vh;
@@ -15,19 +17,18 @@
 
 .input {
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .resultBlock {
-  border-width: 1px;
+  border-width: 2px;
   border-color: lightseagreen;
-  height: 300px;
+  height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  p {
-    font-size: xx-large;
-  }
+  position: relative;
 }
 
 .colorPicker {
@@ -35,4 +36,87 @@
   p {
     margin-bottom: 10px;
   }
+}
+
+.resultString{
+  font-size: 100px;
+}
+
+.effect1Block{
+  .effect1{
+    font-family: "Overlock", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    color: #00b0f0;
+    transform: rotate(-10deg);
+    -webkit-text-stroke: 13px #0037da;
+  }
+  .str1{
+    position: absolute;
+    left: 1;
+    top: 1;
+  }
+  .str2{
+    position: absolute;
+    left: 1;
+    top: 1;
+    color: #fff;
+    -webkit-text-stroke: 6px #fff;
+  }
+  .str3{
+    position: absolute;
+    left: 1;
+    top: 1;
+    -webkit-text-stroke: 3px #0037da;
+  }
+}
+
+.effect2Block{
+  .effect2{
+    color: #fff;
+    text-shadow: 
+    -4px -4px 0 rgb(23, 242, 246), /* 左上藍色陰影 */
+    0px 0px 0 rgb(209, 18, 110), /* 右上紅色陰影 */
+    4px 4px 0 rgb(209, 18, 110), /* 左下紅色陰影 */
+    0px  0px 0 rgb(23, 242, 246); /* 右下藍色陰影 */
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+  }
+  .str1{
+    position: absolute;
+    left: 1;
+    top: 1;
+  }
+  .str2{
+    position: absolute;
+    left: 1;
+    top: 1;
+  }
+  .str3{
+    position: absolute;
+    left: 1;
+    top: 1;
+  }
+}
+
+.str1{
+  position: absolute;
+  left: 1;
+  top: 1;
+}
+.str2{
+  position: absolute;
+  left: 1;
+  top: 1;
+}
+.str3{
+  position: absolute;
+  left: 1;
+  top: 1;
+}
+
+.description{
+  margin-bottom: 10px;
 }
