@@ -1,8 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
+p {
+  font-weight: bold;
+}
 
 .flex {
   display: flex;
@@ -21,49 +19,48 @@
 }
 
 .resultBlock {
-  border-width: 2px;
-  border-color: lightseagreen;
-  height: 350px;
+  height: 100vh;
+  width: 564px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
   position: relative;
 }
 
 .colorPicker {
-  margin-top: 25px;
+  margin: 25px 0;
   p {
     margin-bottom: 10px;
   }
 }
 
-.resultString{
+.resultString {
   font-size: 100px;
 }
 
-.effect1Block{
-  .effect1{
-    font-family: "Overlock", sans-serif;
+.effect1Block {
+  .effect1 {
+    font-family: 'Overlock', sans-serif;
     font-weight: 900;
     font-style: italic;
     color: #00b0f0;
     transform: rotate(-10deg);
     -webkit-text-stroke: 13px #0037da;
   }
-  .str1{
+  .str1 {
     position: absolute;
     left: 1;
     top: 1;
   }
-  .str2{
+  .str2 {
     position: absolute;
     left: 1;
     top: 1;
     color: #fff;
     -webkit-text-stroke: 6px #fff;
   }
-  .str3{
+  .str3 {
     position: absolute;
     left: 1;
     top: 1;
@@ -71,52 +68,87 @@
   }
 }
 
-.effect2Block{
-  .effect2{
+.effect2Block {
+  .effect2 {
     color: #fff;
-    text-shadow: 
-    -4px -4px 0 rgb(23, 242, 246), /* 左上藍色陰影 */
-    0px 0px 0 rgb(209, 18, 110), /* 右上紅色陰影 */
-    4px 4px 0 rgb(209, 18, 110), /* 左下紅色陰影 */
-    0px  0px 0 rgb(23, 242, 246); /* 右下藍色陰影 */
-    font-family: "Orbitron", sans-serif;
+    text-shadow:
+      -4px -4px 0 rgb(23, 242, 246),
+      /* 左上藍色陰影 */ 0px 0px 0 rgb(209, 18, 110),
+      /* 右上紅色陰影 */ 4px 4px 0 rgb(209, 18, 110),
+      /* 左下紅色陰影 */ 0px 0px 0 rgb(23, 242, 246); /* 右下藍色陰影 */
+    font-family: 'Orbitron', sans-serif;
     font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
   }
-  .str1{
+  .str1 {
     position: absolute;
     left: 1;
     top: 1;
   }
-  .str2{
+  .str2 {
     position: absolute;
     left: 1;
     top: 1;
   }
-  .str3{
+  .str3 {
     position: absolute;
     left: 1;
     top: 1;
   }
 }
 
-.str1{
+.str1 {
   position: absolute;
   left: 1;
   top: 1;
 }
-.str2{
+.str2 {
   position: absolute;
   left: 1;
   top: 1;
 }
-.str3{
+.str3 {
   position: absolute;
   left: 1;
   top: 1;
 }
 
-.description{
+.description {
   margin-bottom: 10px;
+}
+
+.firstBg {
+  background-image: url('./BG_1.jpeg');
+}
+.secBg {
+  background-image: url('./BG_2.jpeg');
+}
+.thirdBg {
+  background-image: url('./BG_3.jpeg');
+}
+
+.btn-group {
+  margin-bottom: 15px;
+  p {
+    margin-bottom: 8px;
+  }
+}
+
+.title-align {
+  text-align: left;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.alignRight {
+  justify-content: end;
+}
+
+.alignCenter {
+  justify-content: center;
+}
+
+.alignLeft {
+  justify-content: start;
 }
