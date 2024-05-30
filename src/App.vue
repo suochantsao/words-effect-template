@@ -18,7 +18,13 @@
       </div>
       <div class="input">
         <p class="description">請輸入文字</p>
-        <el-input size="large" v-model="inputValue" style="width: 240px" placeholder="請輸入文字" />
+        <el-input
+          size="large"
+          v-model="inputValue"
+          style="width: 240px"
+          placeholder="請輸入文字"
+          clearable
+        />
       </div>
       <p class="description">請選擇字體</p>
       <el-select
